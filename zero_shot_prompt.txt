@@ -1,0 +1,10 @@
+Zero-shot prompt placeholder.
+
+function textToSnakeCase(text) {
+    return text
+        .replace(/\s+/g, '_')
+        .replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`)
+        .replace(/^_+/, '')
+        .replace(/_+/g, '_')
+        .toLowerCase();
+}
